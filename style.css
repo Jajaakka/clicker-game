@@ -65,3 +65,32 @@ button {
     background-color: #555;
 }
 
+/* Task Page Styles */
+.task-container {
+    padding: 20px;
+    margin-top: 50px;
+}
+
+ul#task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#task-list li {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.task-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.task-button:hover {
+    background-color: #218838;
+}
+
