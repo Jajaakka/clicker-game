@@ -50,3 +50,19 @@ function startAutoClick() {
         }, 1000);
     }
 }
+
+// Task Points
+const taskButtons = document.querySelectorAll('.task-button');
+
+if (taskButtons) {
+    taskButtons.forEach(button => {
+        button.addEventListener('click', (e) => {
+            const points = parseInt(e.target.getAttribute('data-points'), 10);
+            score += points;
+            updateScore();
+            e.target.disabled = true; // Disable button after claiming points
+            e.target.textContent = "Claimed!";
+        });
+    });
+}
+
